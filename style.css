@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-image: url(images/cloud.png);
+    background-size: 90%;
+    width: 100%;
+    height: 100vh;
+    background-position: 0%;
+}
+.road {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(images/road.png);
+    background-size: cover;
+    background-position: 100%;
+}
+.car {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-image: url(images/car1.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: contain;
+    bottom: 25px;
+    z-index: 1;
+}
+
+.controls {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(0 0 0 / 55%);
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(6px);
+    align-items: center;
+}
+
+input[type=button] {
+    margin: 15px;
+    width: 60px;
+    height: 60px;
+    cursor: grab;
+    border-radius: 50%;
+    border: none;
+}
+
+input.start {
+    background-color: #43ffee;
+}
+
+input.reverce {
+    background-color: #64f164;
+}
+input.stop {
+    background-color: red;
+    color: wheat;
+    font-weight: 900;
+}
+
+.fuel {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 30px;
+}
+.lavelc {
+    width: 200px;
+    height: 13px;
+    overflow: hidden;
+    border: 7px solid black;
+}
+.innerfuel {
+    width: 50%;
+    height: 20px;
+    background-color: green;
+}
+input.inject {
+    width: 100px !important;
+    background-color: #e593eb;
+}
+
+.injectform {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.24);
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(8.3px);
+    -webkit-backdrop-filter: blur(8.3px);
+    display: none;
+}
+
+.form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 16px;
+}
+button.submitamount {
+    padding: 3px 10px;
+    border: none;
+    background-color: #31bdff;
+}
+
+h3.showlbox {
+    display: none;
+    text-align: right;
+    margin: 10px 0px 0 0;
+}
+
+span.close {
+    position: absolute;
+    right: 37%;
+    top: 38vh;
+    font-family: cursive;
+    font-weight: 900;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+h3.error {
+    display: none;
+    color: red;
+    text-align: center;
+    background-color: black;
+}
+
+/* counter ....................  */
